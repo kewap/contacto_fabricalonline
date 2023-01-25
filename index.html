@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <!--inicio tabs-->
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Tengo una consulta</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Tengo una idea para diseñar e imprimir</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Quiero hacer un pedido de impresión</button>
+                    </li>
+                  </ul>
+                  <div class="tab-content" id="pills-tabContent">
+                      <!--tab 1-->
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                        <!--form tab 1-->
+                        <form action="" method="post">
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Nombre y Apellido</label>
+                                <input type="text" class="form-control" id="exampleFormControlInput1" >
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">Cuentanos, en que podemos ayudarte</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label for="formFile" class="form-label">Imagen de referencia</label>
+                                <input class="form-control" type="file" id="formFile">
+                            </div>
+                            <div class="mb-3">
+                                <label for="formFile" class="form-label">Como quieres que te contactemos</label>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option value="1">Correo electronico</option>
+                                    <option value="2">Whatsapp</option>
+                                    <option value="3">Llamada telefonica</option>
+                                  </select>
+                                  <input type="text" class="form-control" id="exampleFormControlInput1" >
+                            </div>
+                        </form>
+                        <!--end form tab 1-->
+                    </div><!--end tab 1-->
+                    <!--tab 2-->
+                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                        <!--form tab 2-->
+                        <form action="" method="post">
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Nombre y Apellido</label>
+                                <input type="text" class="form-control" id="exampleFormControlInput1" >
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">Describe brevemente tu idea</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label for="formFile" class="form-label">Imagen de referencia</label>
+                                <input class="form-control" type="file" id="formFile">
+                            </div>
+                            <div class="mb-3">
+                                <label for="formFile" class="form-label">Como quieres que te contactemos</label>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option value="1">Correo electronico</option>
+                                    <option value="2">Whatsapp</option>
+                                    <option value="3">Llamada telefonica</option>
+                                  </select>
+                                  <input type="text" class="form-control" id="exampleFormControlInput1" >
+                            </div>
+                        </form>
+                        <!--end form tab 2-->
+                    </div><!--end tab 2-->
+                    <!--tab 3-->
+                    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                        <!--form tab 3-->
+                        <form action="" method="post">
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Nombre y Apellido</label>
+                                <input type="text" class="form-control" id="exampleFormControlInput1" >
+                            </div>
+                            <div class="mb-3">
+                                <label for="formFile" class="form-label">Archivo</label>
+                                <input class="form-control" type="file" id="formFile">
+                            </div>
+                            <div class="mb-3">
+                                <label for="formFile" class="form-label">Material</label>
+                                <div class="card my-1">
+                                    <div class="card-body">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                            <label class="form-check-label" for="flexRadioDefault1">
+                                            PLA (Polilactida): Es un material duro y resistente con buenas terminaciones, se utiliza comúnmente para la fabricación de figuras, decoración, prototipos y fichas para juegos, así como también para productos finales.
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card my-4">
+                                    <div class="card-body">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                            <label class="form-check-label" for="flexRadioDefault2">
+                                                PETG (Poliéster tereftalato de etileno glicol): Es un material duro y resistente al exterior, que no se degrada con el contacto con aceites o químicos. Es utilizado en la fabricación de prototipos, repuestos para vehículos y motos, y productos finales.
+                                            </label>
+                                          </div>
+                                    </div>
+                                </div>
+                                <div class="card my-4">
+                                    <div class="card-body">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                            <label class="form-check-label" for="flexRadioDefault2">
+                                                ABS (Acrilonitrilo Butadieno Estireno): Es un material duro y resistente, se utiliza comúnmente para fabricar prototipos, piezas de repuesto para automóviles y herramientas.
+                                            </label>
+                                          </div>
+                                    </div>
+                                </div>
+                                <div class="card my-4">
+                                    <div class="card-body">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                            <label class="form-check-label" for="flexRadioDefault2">
+                                                TPU (Poliuretano termoplástico): Es un material altamente flexible y duradero, que ofrece resistencia química y a altas temperaturas. Se utiliza en la fabricación de prototipos, suelas de zapatos y piezas que requieren ser flexibles.
+                                            </label>
+                                          </div>
+                                    </div>
+                                </div>
+                                
+                                  
+                                  
+                                  
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Relleno</label>
+                                <input type="range" min="0" max="100" value="0" class="form-range" id="myRange">
+                                <p>Porcentaje de relleno: <span id="demo"></span></p>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">Comentarios / observaciones</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="formFile" class="form-label">Como quieres que te contactemos</label>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option value="1">Correo electronico</option>
+                                    <option value="2">Whatsapp</option>
+                                    <option value="3">Llamada telefonica</option>
+                                  </select>
+                                  <input type="text" class="form-control" id="exampleFormControlInput1" >
+                            </div>
+                        </form>
+                        <!--end form tab 3-->
+                    </div><!--end tab 3-->
+                  </div>
+                  <!--end tabs-->
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script>
+        var slider = document.getElementById("myRange");
+        var output = document.getElementById("demo");
+        output.innerHTML = slider.value;
+        
+        slider.oninput = function() {
+          output.innerHTML = this.value+'%';
+        }
+        </script>
+</body>
+</html>
